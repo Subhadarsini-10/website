@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.hello {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bolder;
+  font-size: 100px;
+  font-style: normal;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+body {
+  background-image: url("./img/moun.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+}
+.side-menu {
+  position: fixed;
+  background-color: rgb(20, 20, 82);
+  width: 300px;
+  height: 100%;
+  transition: width 0.2s ease-in;
+}
+.side-menu.inactive {
+  width: 80px;
+}
+.side-menu .top-section {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.logo {
+  color: white;
+  font-size: x-large;
+  display: inline-block;
+}
+.side-menu .top-section .toggle-menu-btn {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.side-menu.inactive .top-section .toggle-menu-btn {
+  right: -50px;
+}
+.side-menu .main-menu .menu-items {
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  background-color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border-radius: 5%;
+}
+.side-menu .main-menu .menu-items .menu-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+}
+.side-menu .main-menu .menu-items span {
+  position: absolute;
+  display: inline-block;
+  line-height: 40px;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+.side-menu.inactive .main-menu .menu-items span {
+  opacity: 0;
+}
+a {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
